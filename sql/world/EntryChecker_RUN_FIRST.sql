@@ -18,7 +18,7 @@ To run this script:
 /*Check to see if entry 500000 and 500001 are free to add the creature templates for the Teleport Network*/
 SELECT `entry`, `name`, `subname`, `faction`, `npcflag` FROM `acore_world`.`creature_template` WHERE `entry` IN (500000, 500001);
 /*Check to see if GUIDs 500000000-500000019 are free to add the creature objects for the Teleport Network*/
-SELECT `guid`, `id1`, `map`, `zoneId`, `areaId` FROM `acore_world`.`creature` WHERE `guid` BETWEEN 5000000 AND 5000019;
+SELECT `guid`, `id`, `map`, `zoneId`, `areaId` FROM `acore_world`.`creature` WHERE `guid` BETWEEN 5000000 AND 5000019;
 /*Check to see if entry 500000, 500001, and 500003 are free to add the broadcast text entries for the Teleport Network*/
 SELECT `ID`, `LanguageID`, `MaleText`, `FemaleText` FROM `acore_world`.`broadcast_text` WHERE `ID` IN (500000, 500001, 500003);
 /*Check to see if entry 500000, 500001, and 500003 are free to add the npc text entries for the Teleport Network*/
